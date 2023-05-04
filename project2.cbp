@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="project2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/project2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/project2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Benefit.h" />
+		<Unit filename="include/CommissionEmployee.h" />
+		<Unit filename="include/DentalBenefit.h" />
+		<Unit filename="include/Department.h" />
+		<Unit filename="include/Employee.h" />
+		<Unit filename="include/HR_System.h" />
+		<Unit filename="include/HealthBenefit.h" />
+		<Unit filename="include/HourlyEmployee.h" />
+		<Unit filename="include/ManagerEmployee.h" />
+		<Unit filename="include/SalariedEmployee.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Benefit.cpp" />
+		<Unit filename="src/CommissionEmployee.cpp" />
+		<Unit filename="src/DentalBenefit.cpp" />
+		<Unit filename="src/Department.cpp" />
+		<Unit filename="src/Employee.cpp" />
+		<Unit filename="src/HR_System.cpp" />
+		<Unit filename="src/HealthBenefit.cpp" />
+		<Unit filename="src/HourlyEmployee.cpp" />
+		<Unit filename="src/ManagerEmployee.cpp" />
+		<Unit filename="src/SalariedEmployee.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
