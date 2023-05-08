@@ -9,6 +9,7 @@ using namespace std;
 int main()
 {
     char k;
+    HR_System h;
     do
     {
         cout<<"|-----------------------|"<<endl;
@@ -22,7 +23,7 @@ int main()
         cout<<"|-----------------------|"<<endl<<endl;
         int n;
         cout<<" enter your choise : "; cin>>n;
-        HR_System h;
+
         switch(n)
         {
         case 1:

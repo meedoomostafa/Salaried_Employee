@@ -30,8 +30,10 @@ void Employee::displaydata()
     cout<<"  phone : "<<phone<<endl;
     cout<<"  jobtitle : "<<jobtitle<<endl;
     b.displaydepart();
+    h.displaybenefit();
+    d.displaybenefit();
 }
-string Employee::findphone()
+int Employee::findphone()
 {
     return phone;
 }

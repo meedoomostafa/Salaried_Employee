@@ -15,10 +15,10 @@ class Employee
         virtual ~Employee();
         void setdata();
         virtual void displaydata();
-        string findphone();
+        int findphone();
         int findid();
-        int employeeid;
-        string name,email,phone,jobtitle;
+        int employeeid,phone;
+        char name[20],email[20],jobtitle[20];
 
     protected:
 

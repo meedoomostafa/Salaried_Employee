@@ -5,7 +5,6 @@
 #include<iomanip>
 #include<unistd.h>
 #include<windows.h>
-
 #include"SalariedEmployee.h"
 #include"HourlyEmployee.h"
 #include"ManagerEmployee.h"
@@ -37,8 +36,7 @@ class HR_System
         SalariedEmployee S[10];
         ManagerEmployee M[10];
         CommissionEmployee C[10];
-        HealthBenefit HB[10];
-        DentalBenefit DB[10];
+
 
 };
 

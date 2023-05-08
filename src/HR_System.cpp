@@ -109,20 +109,16 @@ void HR_System::addemployee()
         switch(x)
         {
         case 1:
-            H[counter_h].setdetailes();
-            counter_h++;
+            H[counter_h++].setdetailes();
             break;
         case 2:
-            S[counter_s].setdetailes();
-            counter_s++;
+            S[counter_s++].setdetailes();
             break;
         case 3:
-            M[counter_m].setdetailes();
-            counter_m++;
+            M[counter_m++].setdetailes();
             break;
         case 4:
-            C[counter_c].setdetailes();
-            counter_c++;
+            C[counter_c++].setdetailes();
             break;
         default:
             cout<<" please enter number from the list "<<endl;
@@ -247,19 +243,31 @@ void HR_System::findemployee()
     cout<<" your choise : ";cin>>x;
     if(x==1)
     {
-        string n;
+        int n;
         cout<<" enter the number : ";cin>>n;
         cout<<endl;
         for(int i=0;i<=counter;i++)
         {
             if( H[i].findphone()==n)
+            {
                 H[i].displaydata();
+                cout<<endl;
+            }
             else if( S[i].findphone()==n )
+            {
                 S[i].displaydata();
+                cout<<endl;
+            }
             else if( M[i].findphone()==n )
+            {
                 M[i].displaydata();
+                cout<<endl;
+            }
             else if( C[i].findphone()==n )
+            {
                 C[i].displaydata();
+                cout<<endl;
+            }
         }
     }
     else if(x==2)
@@ -270,13 +278,25 @@ void HR_System::findemployee()
         for(int i=0;i<=counter;i++)
         {
             if( H[i].findid()==n )
+            {
                 H[i].displaydata();
+                cout<<endl;
+            }
             else if( S[i].findid()==n )
+            {
                 S[i].displaydata();
+                cout<<endl;
+            }
             else if( M[i].findid()==n )
+            {
                 M[i].displaydata();
+                cout<<endl;
+            }
             else if( C[i].findid()==n )
+            {
                 C[i].displaydata();
+                cout<<endl;
+            }
         }
     }
     else
@@ -290,41 +310,33 @@ void HR_System::showall()
     cout<<" your choise : ";cin>>n;
     if(n==1)
     {
-        for(int i=0;i<=counter_h;i++)
+        for(int i=0;i<counter_h;i++)
         {
             H[i].displaydata();
-            HB[i].displaybenefit();
-            DB[i].displaybenefit();
             cout<<endl;
         }
     }
     else if(n==2)
     {
-        for(int i=0;i<=counter_s;i++)
+        for(int i=0;i<counter_s;i++)
         {
             S[i].displaydata();
-            HB[i].displaybenefit();
-            DB[i].displaybenefit();
             cout<<endl;
         }
     }
     else if(n==3)
     {
-        for(int i=0;i<=counter_m;i++)
+        for(int i=0;i<counter_m;i++)
         {
             M[i].displaydata();
-            HB[i].displaybenefit();
-            DB[i].displaybenefit();
             cout<<endl;
         }
     }
     else if(n==4)
     {
-        for(int i=0;i<=counter_c;i++)
+        for(int i=0;i<counter_c;i++)
         {
             C[i].displaydata();
-            HB[i].displaybenefit();
-            DB[i].displaybenefit();
             cout<<endl;
         }
     }
