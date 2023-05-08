@@ -5,10 +5,13 @@
 #include<iomanip>
 #include<unistd.h>
 #include<windows.h>
+
 #include"SalariedEmployee.h"
 #include"HourlyEmployee.h"
 #include"ManagerEmployee.h"
 #include"CommissionEmployee.h"
+#include"DentalBenefit.h"
+#include"HealthBenefit.h"
 #include"Employee.h"
 using namespace std;
 
@@ -25,14 +28,17 @@ class HR_System
         void showall();
 
     protected:
-        HourlyEmployee *H= new HourlyEmployee[100];
-        SalariedEmployee *S= new SalariedEmployee[100];
-        ManagerEmployee *M= new ManagerEmployee[100];
-        CommissionEmployee *C= new CommissionEmployee[100];
-        Employee *E= new Employee[100];
+
 
     private:
+        int counter_h=0,counter_s=0,counter_m=0,counter_c=0;
         int counter=0;
+        HourlyEmployee H[10];
+        SalariedEmployee S[10];
+        ManagerEmployee M[10];
+        CommissionEmployee C[10];
+        HealthBenefit HB[10];
+        DentalBenefit DB[10];
 
 };
 

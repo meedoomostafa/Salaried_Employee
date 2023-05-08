@@ -13,6 +13,7 @@ class CommissionEmployee : public Employee
         virtual ~CommissionEmployee();
         void setdetailes();
         double getsalary();
+        void displaydata();
     protected:
 
     private:

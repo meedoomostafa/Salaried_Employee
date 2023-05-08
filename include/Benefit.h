@@ -13,11 +13,9 @@ class Benefit
         virtual double calculatebenefit()=0;
         virtual void displaybenefit()=0;
 
-    protected:
         string plantype;
         double amount;
         double benefit;
-    private:
 
 
 };

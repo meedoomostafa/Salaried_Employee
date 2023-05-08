@@ -2,6 +2,8 @@
 #define EMPLOYEE_H
 #include<iostream>
 #include<string>
+#include"HealthBenefit.h"
+#include"DentalBenefit.h"
 #include"Department.h"
 using namespace std;
 
@@ -12,14 +14,18 @@ class Employee
         Employee();
         virtual ~Employee();
         void setdata();
-        void displaydata();
-
-
-    protected:
+        virtual void displaydata();
+        string findphone();
+        int findid();
         int employeeid;
         string name,email,phone,jobtitle;
+
+    protected:
+
     private:
         Department b;
+        HealthBenefit h;
+        DentalBenefit d;
 };
 
 #endif // EMPLOYEE_H

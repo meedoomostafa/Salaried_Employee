@@ -17,6 +17,9 @@ void Employee::setdata()
     cout<<" enter phone : ";cin>>phone;
     cout<<" enter jobtitle : ";cin>>jobtitle;
     b.setdepart();
+    h.getdetails();
+    d.setamount(h.findamount());
+
 
 }
 void Employee::displaydata()
@@ -28,5 +31,12 @@ void Employee::displaydata()
     cout<<"  jobtitle : "<<jobtitle<<endl;
     b.displaydepart();
 }
-
+string Employee::findphone()
+{
+    return phone;
+}
+int Employee::findid()
+{
+    return employeeid;
+}
 

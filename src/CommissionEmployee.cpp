@@ -20,3 +20,9 @@ double CommissionEmployee::getsalary()
     salary=rate*target;
     return salary;
 }
+void CommissionEmployee::displaydata()
+{
+    Employee::displaydata();
+    cout<<" rate is : "<<rate<<endl;
+    cout<<" target is : "<<target<<endl;
+}

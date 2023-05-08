@@ -12,7 +12,7 @@ ManagerEmployee::~ManagerEmployee()
 void ManagerEmployee::setdetailes()
 {
     cout<<" enter bouns : ";cin>>bouns;
-    cout<<"enter salary : ";cin>>salary;
+    cout<<" enter salary : ";cin>>salary;
     Employee::setdata();
 }
 double ManagerEmployee::getsalary()
@@ -23,4 +23,10 @@ double ManagerEmployee::getsalary()
 void ManagerEmployee::addbouns(double morebouns)
 {
     bouns+=morebouns;
+}
+void ManagerEmployee::displaydata()
+{
+    Employee::displaydata();
+    cout<<" bouns is : "<<bouns<<endl;
+    cout<<" salary is : "<<salary<<endl;
 }

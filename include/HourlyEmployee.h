@@ -14,6 +14,7 @@ class HourlyEmployee : public Employee
         void setdetailes();
         double getsalary();
         void addhours(double);
+        void displaydata();
 
     protected:
 

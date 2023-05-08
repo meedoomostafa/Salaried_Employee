@@ -25,3 +25,9 @@ void HourlyEmployee::addhours(double morehours)
 {
      hours+=morehours;
 }
+void HourlyEmployee::displaydata()
+{
+    Employee::displaydata();
+    cout<<" rate is : "<<rate<<endl;
+    cout<<" hours is : "<<hours<<endl;
+}

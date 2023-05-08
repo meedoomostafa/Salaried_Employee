@@ -31,10 +31,22 @@ int main()
         case 2:
             h.addemployee();
             break;
+        case 3:
+            h.editemployee();
+            break;
+        case 4:
+            h.delete_employee();
+            break;
+        case 5:
+            h.findemployee();
+            break;
+        case 6:
+            h.showall();
+            break;
+        case 7:
+            return 0;
+            break;
         }
-        sleep(5);
-        system("cls");
-
         cout<<"-------------------------------------------"<<endl;
         cout<<" you want to enter another progress ? (y/n) "<<endl;
         cout<<"-------------------------------------------"<<endl;

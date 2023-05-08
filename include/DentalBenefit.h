@@ -9,11 +9,10 @@ using namespace std;
 class DentalBenefit : public Benefit
 {
     public:
-        DentalBenefit();
-        virtual ~DentalBenefit();
+
         double calculatebenefit();
-        void getdetails();
         void displaybenefit();
+        void setamount(double);
 
     protected:
 

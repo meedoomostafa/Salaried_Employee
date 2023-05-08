@@ -14,6 +14,7 @@ class ManagerEmployee : public Employee
         void setdetailes();
         double getsalary();
         void addbouns(double);
+        void displaydata();
 
     protected:
 

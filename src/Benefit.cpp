@@ -9,7 +9,4 @@ Benefit::~Benefit()
 {
     //dtor
 }
-void Benefit::displaybenefit()
-{
 
-}

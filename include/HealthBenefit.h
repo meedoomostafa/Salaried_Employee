@@ -14,7 +14,7 @@ class HealthBenefit : public Benefit
         double calculatebenefit();
         void getdetails();
         void displaybenefit();
-
+        double findamount();
     protected:
 
     private:

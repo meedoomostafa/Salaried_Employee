@@ -19,3 +19,8 @@ double SalariedEmployee::getsalary()
     Salary=salary;
     return Salary;
 }
+void SalariedEmployee::displaydata()
+{
+    Employee::displaydata();
+    cout<<" salary is : "<<Salary<<endl;
+}

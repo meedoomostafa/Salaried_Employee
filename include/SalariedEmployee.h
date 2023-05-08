@@ -13,6 +13,7 @@ class SalariedEmployee : public Employee
         virtual ~SalariedEmployee();
         void setdetailes();
         double getsalary();
+        void displaydata();
 
 
     protected:

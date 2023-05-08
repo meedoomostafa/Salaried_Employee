@@ -16,11 +16,14 @@ double HealthBenefit::calculatebenefit()
 }
 void HealthBenefit::getdetails()
 {
-    cout<<"enter amount : ";cin>>amount;
-    cout<<"enter plan type : ";cin>>plantype;
+    cout<<" enter amount : ";cin>>amount;
+    cout<<endl;
 }
 void HealthBenefit::displaybenefit()
 {
-    cout<<" benefit : "<<calculatebenefit()<<endl;
-    cout<<" plan type : "<<plantype<<endl;
+    cout<<" health benefit : "<<calculatebenefit()<<endl;
+}
+double HealthBenefit::findamount()
+{
+    return amount;
 }
